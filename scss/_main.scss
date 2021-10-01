@@ -1,0 +1,273 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*body*/
+
+body {
+  max-width: 1280px;
+  margin: auto;
+  background-color: #fff;
+  font-family: $fontFamily;
+  font-size: $baseFontSize;
+  color: $textColor;
+
+  h1 {
+    font-weight: $boldWeight;
+  }
+}
+
+/*navigation*/
+
+nav {
+  margin-left: 94px;
+  margin-right: 94px;
+  display: flex;
+  justify-content: space-between;
+
+  div#logo {
+    padding-top: 26px;
+  }
+
+  div#menu {
+    padding-top: 26px;
+  }
+
+  ul {
+    @include horizontal-menu;
+  }
+
+  // ul {
+  //   list-style-type: none;
+  //   display: flex;
+  //   margin: 0 auto;
+  //   justify-content: space-evenly;
+
+  //   li {
+  //     padding: 0 0.5rem;
+
+  //     a {
+  //       display: block;
+  //       padding: 0.5rem 0;
+  //       text-decoration: none;
+  //       font-size: 16px;
+  //       text-align: center;
+  //       color: $textColor;
+  //     }
+
+  //     a.active {
+  //       color: #3964fa;
+  //     }
+  //   }
+  // }
+}
+
+/*main*/
+ 
+
+main {
+  padding: 1rem $gutter;
+
+  .button {
+    @include basic-button;
+    border: #fb7852 1px solid;
+    width: 66%;
+    background-color: #fb7852;
+    color: #fff;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 50px;
+    padding: 0 1rem;
+    color: #2a0e05;
+    font-weight: 800;
+    margin: 4rem 0 2rem 0;
+  }
+
+  p {
+    padding: 0 1rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  div.heroContainer {
+    display: flex;
+    margin-left: 94px;
+  }
+
+  div.heroLeft p {
+    text-align: left;
+    margin: 16px 94px 16px 0;
+  }
+
+  div.heroLeft p.button {
+    margin: 2rem 0 2rem 1rem;
+    text-align: center;
+  }
+
+  h2 {
+    padding: 0 1rem;
+    font-weight: 800;
+    color: #2a0e05;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  div.midText {
+    margin: 120px 0;
+
+    p {
+      width: 700px;
+    }
+  }
+
+  div.centerUpsaleContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+    margin-left: 94px;
+    margin-right: 94px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      width: 510px;
+
+      h2 {
+        margin-top: 56px;
+      }
+
+      img {
+        margin: 0 auto;
+        width: 510px;
+      }
+    }
+  }
+
+  div.hero2Container {
+    display: flex;
+    margin: 120px 0;
+  }
+
+  div.hero2Right {
+    text-align: left;
+    margin: 16px 0 16px 94px;
+
+    p {
+      text-align: left;
+      /* margin: 16px 0 16px 94px; */
+    }
+
+    p.buttonLight {
+      @include basic-button;
+      width: 66%;
+    }
+  }
+
+  .buttonLight {
+    border: #fb7852 1px solid;
+    width: 30%;
+    color: #fb7852;
+  }
+
+  .formContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 94px;
+    margin-right: 94px;
+
+    div.formLeft {
+      label.top {
+        display: block;
+        padding-top: 2rem;
+        font-size: 16px;
+
+        input {
+          display: block;
+          font-size: $baseFontSize;
+          border: solid 1px $textColor;
+          padding: .5rem;
+          width: 100%;
+        }
+      }
+
+    }
+
+    div.formRight {
+
+      margin: 8rem auto;
+
+    h3 {
+      margin-left: 3rem;
+    }
+
+    ul {
+      list-style: decimal;
+     margin: auto;
+
+      li {
+        padding: .5rem;
+      }
+    }
+  }
+
+  }
+}
+
+footer {
+  display: flex;
+  margin-top: 120px;
+  background-color: #fb7852;
+  color: #fff;
+  justify-content: space-evenly;
+  
+
+  div.footerLeft {
+    padding: 136px 94px 0 94px;
+    text-align: center;
+  }
+
+  .button {
+    @include basic-button;
+    border: 1px solid #fff;
+    width: 60%;
+  }
+
+  div.footerRight {
+    padding: 0 94px 0 0;
+    text-align: center;
+  }
+
+  ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+
+    li {
+      padding: 0 0.5rem;
+
+      a {
+        display: block;
+        padding: 0.5rem 18px;
+        text-decoration: none;
+        font-size: 16px;
+        text-align: center;
+        
+      }
+    }
+  }
+}
+
+

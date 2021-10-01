@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Anna Abbott" />
+
+    <!-- tells phones not to lie about their width; not to enlarge font on turning sideways-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+
+    <title>Assignment 2-Sign up</title>
+
+    <!--font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!--font awesome
+    <script src="https://kit.fontawesome.com/a711695820.js" crossorigin="anonymous"></script>-->
+
+    <!--style sheets-->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="./scss/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--navigation below-->
+
+    <nav class="clearfix">
+      <div id="logo">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="logo" />
+        </a>
+      </div>
+      <div id="menu">
+        <ul>
+          <li>
+            <a href="#">Products</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+          <li>
+            <a class="active" href="#">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--main below-->
+    <main> 
+        <div class="formContainer">
+            <div class="formLeft">
+                <h2>Create an Account</h2>
+                <form>
+                    <label class="top">Full Name <input type="text" name="name" autocomplete="name" required></label>
+                    <label class="top">Email <input type="text" name="email" autocomplete="email" required></label>
+                    <label class="top">Confirm Email <input type="text" name="email" autocomplete="email" required></label>
+                    <label class="top">Password <input type="text" required></label>
+                    <label class="top">Confirm Password <input type="text" required></label>
+
+                    <input type="submit" value="Create Account" class="button">
+                </form>
+            </div>
+
+            <div class="formRight">
+                <h3>5 reasons you'll love MarketPush</h2>
+                <ul>
+                     <li>Rapidly communicate with your clients</li>
+                     <li>Insights help you grow your business</li>
+                     <li>Easily create new campaigns</li>
+                     <li>Your data stays secure</li>
+                     <li>Live customer service representatives</li>
+                </ul>
+            <div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <ul>
+            <li>
+                <a>Privacy Policy</a>
+            </li>
+            <li>
+                <a>Terms of Service</a>
+            </li>
+            <li>
+                <a>Support</a>
+            </li>
+        </ul>
+    </footer>
+  </body>
+</html>

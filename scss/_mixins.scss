@@ -1,0 +1,35 @@
+@mixin basic-button {
+    text-align: center;
+    border-radius: 16px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin: 2rem auto;
+}
+
+@mixin activeLink {
+    color: #3964fa
+}
+    
+@mixin horizontal-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+
+    li {
+        padding: 0 .5rem;
+
+        a {
+            display: block;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+            color: $textColor;
+        }
+        
+        a.active {
+            @include activeLink;
+        }
+    }
+}
+
